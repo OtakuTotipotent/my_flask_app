@@ -8,8 +8,10 @@
 </head>
 
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is index.html file.</p>
+    <h1>Hello, Guys!</h1>
+    {% for name in names %}
+    <p>This is {{ name }}</p>
+    {% endfor %}
 
     <script src="script.js"></script>
 </body>
