@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: palevioletred;
+    background-color: #635252;
+    padding: 0 16px;
+}
+
+.container {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px auto;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid palevioletred;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 1.2rem;
+    letter-spacing: .2px;
+}
