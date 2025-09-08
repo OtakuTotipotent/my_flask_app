@@ -12,9 +12,10 @@
     <div class="container">
         <h1>Hello, Guys!</h1>
         <div class="items">
-            {% for name in names %}
-            <p>This is {{ name }}</p>
+            {% for item in list %}
+            <p>This is {{ item }}</p>
             {% endfor %}
+            <p id="add-item">+ Add</p>
         </div>
     </div>
 
