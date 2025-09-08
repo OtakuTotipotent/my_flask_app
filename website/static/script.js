@@ -5,13 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     addButton.addEventListener('click', () => {
         modalContainer.classList.remove('hidden');
-        console.log("hello")
     });
 
     closeModalButton.addEventListener('click', () => {
-        console.log("hello")
         modalContainer.classList.add("hidden");
     });
 });
-
-console.log("hello")
