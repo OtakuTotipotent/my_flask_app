@@ -9,6 +9,8 @@ body {
     color: palevioletred;
     background-color: #635252;
     padding: 0 16px;
+    position: relative;
+
 }
 
 ::selection {
@@ -59,4 +61,95 @@ body {
         background-color: palevioletred;
         color: black;
     }
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+form {
+    max-width: 400px;
+    color: black;
+    background-color: palevioletred;
+    border-radius: 16px;
+    border: 1px solid black;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+form input {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: transparent;
+
+    &::placeholder {
+        color: black;
+        opacity: 0.4;
+    }
+}
+
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.btn-action {
+    font-size: 1rem;
+    padding: 7px 24px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .2s linear;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-action:hover {
+    color: palevioletred;
+}
+
+.btn-action::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform .2s linear;
+    z-index: -1;
+}
+
+.btn-action:hover::before {
+    transform: scaleX(1);
 }
